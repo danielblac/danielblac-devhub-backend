@@ -15,7 +15,7 @@ export class CreateProjectDto {
 
   @IsUrl()
   @IsOptional()
-  live_link?: string;
+  live_link: string;
 
   @IsString()
   @IsOptional()
@@ -23,5 +23,5 @@ export class CreateProjectDto {
 
   @IsBoolean()
   @IsOptional()
-  featured?: boolean;
+  featured: boolean;
 }
