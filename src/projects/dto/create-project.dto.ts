@@ -1,4 +1,10 @@
-import { IsNotEmpty, IsString, IsUrl, IsOptional, IsBoolean } from 'class-validator';
+import {
+  IsNotEmpty,
+  IsString,
+  IsUrl,
+  IsOptional,
+  IsBoolean,
+} from 'class-validator';
 
 export class CreateProjectDto {
   @IsString()
@@ -15,7 +21,7 @@ export class CreateProjectDto {
 
   @IsUrl()
   @IsOptional()
-  live_link: string;
+  live_link?: string;
 
   @IsString()
   @IsOptional()
@@ -23,5 +29,5 @@ export class CreateProjectDto {
 
   @IsBoolean()
   @IsOptional()
-  featured: boolean;
+  featured?: boolean;
 }
