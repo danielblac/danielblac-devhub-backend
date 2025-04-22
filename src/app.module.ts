@@ -4,6 +4,11 @@ import { ProjectsModule } from './projects/projects.module';
 import { UserModule } from './user/user.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
+import { ContactModule } from './contact/contact.module';
+import { MailerService } from './mailer/mailer.service';
+import { MailerModule } from './mailer/mailer.module';
+import { GamzcontactModule } from './gamzcontact/gamzcontact.module';
+import { GamzmailerModule } from './gamzmailer/gamzmailer.module';
 
 @Module({
   imports: [
@@ -21,8 +26,12 @@ import { MongooseModule } from '@nestjs/mongoose';
     AuthModule,
     ProjectsModule,
     UserModule,
+    ContactModule,
+    MailerModule,
+    GamzcontactModule,
+    GamzmailerModule,
   ],
   controllers: [],
-  providers: [],
+  providers: [MailerService],
 })
 export class AppModule {}
