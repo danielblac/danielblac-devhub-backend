@@ -9,6 +9,7 @@ import { MailerService } from './mailer/mailer.service';
 import { MailerModule } from './mailer/mailer.module';
 import { GamzcontactModule } from './gamzcontact/gamzcontact.module';
 import { GamzmailerModule } from './gamzmailer/gamzmailer.module';
+import { BookModule } from './book/book.module';
 
 @Module({
   imports: [
@@ -30,6 +31,7 @@ import { GamzmailerModule } from './gamzmailer/gamzmailer.module';
     MailerModule,
     GamzcontactModule,
     GamzmailerModule,
+    BookModule,
   ],
   controllers: [],
   providers: [MailerService],

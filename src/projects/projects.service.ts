@@ -65,7 +65,7 @@ export class ProjectsService {
         throw new NotFoundException('Project not found');
       }
       return {
-        message: 'User retrieved successfully',
+        message: 'Project retrieved successfully',
         data: project,
       };
     } catch (error) {
