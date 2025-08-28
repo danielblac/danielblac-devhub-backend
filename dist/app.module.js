@@ -19,6 +19,7 @@ const mailer_module_1 = require("./mailer/mailer.module");
 const gamzcontact_module_1 = require("./gamzcontact/gamzcontact.module");
 const gamzmailer_module_1 = require("./gamzmailer/gamzmailer.module");
 const book_module_1 = require("./book/book.module");
+const blog_posts_module_1 = require("./blog-posts/blog-posts.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -44,6 +45,7 @@ exports.AppModule = AppModule = __decorate([
             gamzcontact_module_1.GamzcontactModule,
             gamzmailer_module_1.GamzmailerModule,
             book_module_1.BookModule,
+            blog_posts_module_1.BlogPostsModule,
         ],
         controllers: [],
         providers: [mailer_service_1.MailerService],
